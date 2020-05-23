@@ -1,2 +1,2 @@
 # gillwald_bot
-Gazebo model for a simple differntial drive robot
+Gazebo model for a simple differential drive robot
