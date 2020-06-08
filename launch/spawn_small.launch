@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<include file="$(find gazebo_ros)/launch/empty_world.launch" />		
+
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find gillwald_bot)/urdf/gillwald_bot_small/gillwald_bot_small.xacro'" />
+    
+    <arg name="x" default="0.5"/>
+    <arg name="y" default="0.5"/>
+    <arg name="z" default="0.5"/>
+    
+    <node name="gillwald_bot_small" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -param robot_description -model gillwald_bot_small -x $(arg x) -y $(arg y) -z $(arg z)" />
+          
+</launch>
