@@ -14,6 +14,7 @@
         <visual name="visual">
           <geometry>
             <mesh><uri>model://mazes/meshes/maze.dae</uri></mesh>
+            <!-- <mesh><uri>model://gillwald_bot/worlds/maze.dae</uri></mesh> -->
           </geometry>
         </visual>
         <collision name="collision">
@@ -21,6 +22,7 @@
         <geometry>
           <mesh>
             <uri>model://mazes/meshes/maze.dae</uri>
+            <!-- <uri>model://gillwald_bot/worlds/maze.dae</uri> -->
           </mesh>
         </geometry>
         <surface>
